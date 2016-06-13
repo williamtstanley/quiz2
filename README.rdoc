@@ -1,28 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Struggled with getting kaminari to work for about 2 hours. No idea how to fix it. I can get search working. I can get pagination working but combining them together proved to be beyond me.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+cest la vi. I will as for help getting it working later today perhaps.
 
 
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
