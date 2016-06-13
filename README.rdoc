@@ -2,7 +2,7 @@
 
 Struggled with getting kaminari to work for about 2 hours. No idea how to fix it. I can get search working. I can get pagination working but combining them together proved to be beyond me.
 
-cest la vi. I will as for help getting it working later today perhaps.
+cest la vi. I will ask for help getting it working later today perhaps.
 
 
 <tt>rake doc:app</tt>.
