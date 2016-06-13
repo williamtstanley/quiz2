@@ -1,0 +1,25 @@
+<div class="form-container">
+    <div class="errors">
+        <%= @ticket.errors.full_messages.join(", ") %>
+    </div>
+<%= form_for @ticket do |f| %>
+    <div class="input-container">
+        <%= f.label :name %>
+        <%= f.text_field :name, placeholder: "First and Last Name" %>
+    </div>
+    <div class="input-container">
+        <%= f.label :email %>
+        <%= f.text_field :email, {placeholder: "Support Ticket message"}%>
+    </div>
+    <div class="input-container">
+        <%= f.radio_button :department, "sales" %> <span>Sales</span>
+        <%= f.radio_button :department, "marketing" %> <span>Marketing </span>
+        <%= f.radio_button :department, "technical" %> <span>Technical</span>
+    </div>
+    <div class="input-container">
+        <%= f.label :message %>
+        <%= f.text_area :message, {rows: 10, cols: 100, placeholder: "Support ticket message"}%>
+    </div>
+    <%= f.submit "Create" %>
+<% end %>
+</div>

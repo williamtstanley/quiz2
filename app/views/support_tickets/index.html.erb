@@ -1,0 +1,33 @@
+<h1>Support Tickets</h1>
+<div><%= link_to "Create New Ticket", new_support_ticket_path %>
+    <%= render "search" %>
+</div>
+
+<hr>
+<% if @tickets %>
+    <% @tickets.each do |ticket| %>
+    <div class="ticket-container">
+
+        <%= link_to "Ticket: #{ticket.id}", support_ticket_path(ticket) %>
+        <p>
+            <%= ticket.name %> | <%= ticket.email %>
+        </p>
+        <h2><%= ticket.department.capitalize %></h2>
+        <% if ticket.message %>
+            <div class="message">
+                <%= ticket.message.truncate(100) %>
+            <div>
+        <% end %>
+        <p>completed: <% if ticket.complete %>
+                        Yes
+                        <% else %>
+                        No
+                    <% end %>
+        </p>
+
+        <hr>
+    <% end %>
+    </div>
+
+<% end %>
+

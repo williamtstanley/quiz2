@@ -1,0 +1,21 @@
+<div class="ticket-container">
+    <h1>Ticket: <%= @ticket.id %></h1>
+    <h3>Department: <%= @ticket.department.capitalize %></h3>
+    <p>
+        Name: <%= @ticket.name %> | Email: <%= @ticket.email %>
+    </p>
+    <p>
+        Message: <%= @ticket.message%>
+    </p>
+    <p>Complete: <% if @ticket.complete %>
+                    Yes
+                    <% else %>
+                    No
+                <% end %>
+    </p>
+    <hr>
+    <%= link_to "Edit", edit_support_ticket_path(@ticket) %>
+    |
+    <%= link_to "Delete", support_ticket_path(@ticket), method: :delete, data: {confirm: "Are you sure?"} %>
+
+</div>
