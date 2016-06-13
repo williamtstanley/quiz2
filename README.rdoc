@@ -1,5 +1,13 @@
 == README
 
+almost forgot to inclue a sql queary to do a count of each departments tickets
+
+SELECT department, COUNT(department) AS department_count
+FROM support_tickets
+GROUP BY department
+
+
+
 Struggled with getting kaminari to work for about 2 hours. No idea how to fix it. I can get search working. I can get pagination working but combining them together proved to be beyond me.
 
 cest la vi. I will ask for help getting it working later today perhaps.
