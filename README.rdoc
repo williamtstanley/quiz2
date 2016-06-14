@@ -8,6 +8,13 @@ GROUP BY department
 
 
 
+
+_____
+
+Figured it out in the end but I will not push it to github as it was well outside the quiz time.
+
+_____
+
 Struggled with getting kaminari to work for about 2 hours. No idea how to fix it. I can get search working. I can get pagination working but combining them together proved to be beyond me.
 
 cest la vi. I will ask for help getting it working later today perhaps.
